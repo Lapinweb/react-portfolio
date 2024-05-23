@@ -36,9 +36,9 @@ const projects : Project[] = [
 
 export default function Projects() {
     return (
-        <div className="projects">
-            <h1>Mes projets</h1>
-            <ul className="list-none mx-2 pl-0 grid grid-cols-2 gap-3">
+        <div className="mx-3">
+            <h1 className="text-center">Mes projets</h1>
+            <ul className="list-none pl-0 grid md:grid-cols-2 lg:grid-cols-3 gap-3">
                 {projects.map((project, index) => (
                     <ProjectCard key={index} {...project} />
                 ))}

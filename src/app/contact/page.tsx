@@ -1,5 +1,3 @@
 export default function Contact() {
-    return (
-        <h1>Me contacter</h1>
-    )
+    return <h1 className="text-center">Me contacter</h1>;
 }

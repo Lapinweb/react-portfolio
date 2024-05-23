@@ -20,7 +20,7 @@ const config: Config = {
     require('daisyui'),
   ],
   daisyui: {
-    themes: ["cupcake", "dark", "light", "valentine", "aqua", "cyberpunk"]
+    themes: ["cupcake", "dark", "light", "valentine", "aqua", "cyberpunk", "winter", "dim", "bumblebee", "retro"]
   }
 };
 export default config;

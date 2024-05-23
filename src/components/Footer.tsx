@@ -1,26 +1,25 @@
 export default function Footer() {
     return (
-        <footer className="footer px-2 py-4 bg-primary text-primary-content">
-            <ul>
-                <li>
-                    <a
-                        href="https://www.linkedin.com/in/c%C3%A9line-sou-5932b413b/"
-                        target="_blank"
-                        rel="noreferrer"
-                    >
-                        LinkedIn
-                    </a>
-                </li>
-                <li>
-                    <a
-                        href="https://github.com/Lapinweb/"
-                        target="_blank"
-                        rel="noreferrer"
-                    >
-                        GitHub
-                    </a>
-                </li>
-            </ul>
+        <footer className="footer p-5 sm:m-4 bg-primary text-primary-content w-full sm:w-fit sm:rounded-box">
+            <nav>
+                <p className="footer-title">Liens</p>
+                <a
+                    className="link link-hover"
+                    href="https://www.linkedin.com/in/c%C3%A9line-sou-5932b413b/"
+                    target="_blank"
+                    rel="noreferrer"
+                >
+                    LinkedIn
+                </a>
+                <a
+                    className="link link-hover"
+                    href="https://github.com/Lapinweb/"
+                    target="_blank"
+                    rel="noreferrer"
+                >
+                    GitHub
+                </a>
+            </nav>
         </footer>
     );
 }

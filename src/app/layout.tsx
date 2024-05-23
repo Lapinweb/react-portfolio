@@ -18,12 +18,14 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html lang="fr" data-theme="cupcake">
+        <html lang="fr" data-theme="winter">
             <body className={inter.className + " min-h-screen flex flex-col"}>
                 <Header />
+
                 <main className="prose max-w-none mx-2 my-5 grow text-base-content">
                     {children}
                 </main>
+
                 <Footer />
             </body>
         </html>

@@ -2,14 +2,19 @@ import Link from "next/link";
 
 export default function Header() {
     return (
-        <header className="px-2 py-5 columns-2 sm:gap-12 overflow-hidden bg-primary text-primary-content">
-            <div className="sm:block">
-                <Link href="/">Mon Portfolio</Link>
-            </div>
-            <nav className="hidden sm:flex justify-end gap-8">
-                <Link href="/">A propos</Link>
-                <Link href="/projects">Projets</Link>
-                <Link href="/contact">Contact</Link>
+        <header className="sm:my-3 sm:mx-5 sm:w-fit bg-primary text-primary-content text-xl shadow-xl sm:rounded-box sticky top-0 sm:top-3 z-10">
+            <nav className="navbar">
+                <ul className="menu menu-horizontal text-lg">
+                    <li>
+                        <Link href="/">Accueil</Link>
+                    </li>
+                    <li>
+                        <Link href="/projects">Mes projets</Link>
+                    </li>
+                    <li>
+                        <Link href="/contact">Contact</Link>
+                    </li>
+                </ul>
             </nav>
         </header>
     );
