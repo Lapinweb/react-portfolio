@@ -5,9 +5,9 @@ export default function Home() {
     return (
         <>
             <h1 className="m-3 text-center">Présentation</h1>
-            <div className="my-16 chat chat-end">
+            <div className="my-16 md:mr-14 chat chat-end">
                 <div className="chat-image avatar">
-                    <div className="mx-2 w-16 bg-accent mask mask-heart"></div>
+                    <div className="mx-2 w-10 sm:w-16 bg-accent mask mask-heart"></div>
                 </div>
                 <div className="chat-header text-sm sm:text-xl text-pretty">
                     Développeuse Full Stack

@@ -18,7 +18,7 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html lang="fr" data-theme="winter">
+        <html lang="fr" data-theme="cupcake">
             <body className={inter.className + " min-h-screen flex flex-col"}>
                 <Header />
 

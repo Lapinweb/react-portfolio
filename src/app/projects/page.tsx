@@ -9,7 +9,7 @@ interface Project {
     stack: Array<string>;
 }
 
-const projects : Project[] = [
+const projects: Project[] = [
     {
         title: "Test",
         description: "blablabla",
@@ -32,15 +32,47 @@ const projects : Project[] = [
         webLink: "",
         stack: ["HTML", "CSS", "Javascript", "Bootstrap"],
     },
+    {
+        title: "Test",
+        description: "blablabla",
+        githubLink: "fauxliengithub",
+        webLink: "fauxlienweb",
+        stack: ["HTML", "CSS", "Javascript"],
+    },
+    {
+        title: "Test",
+        description: "blablabla\nCeci est un paragraphe",
+        githubLink: "fauxliengithub",
+        webLink: "fauxlienweb",
+        stack: ["HTML", "CSS", "Javascript"],
+    },
+    {
+        title: "Test",
+        description: "blablabla",
+        githubLink: "fauxliengithub",
+        webLink: "fauxlienweb",
+        stack: ["HTML", "CSS", "Javascript"],
+    },
+    {
+        title: "Test",
+        description: "blablabla",
+        githubLink: "fauxliengithub",
+        webLink: "fauxlienweb",
+        stack: ["HTML", "CSS", "Javascript"],
+    },
 ];
 
 export default function Projects() {
     return (
         <div className="mx-3">
             <h1 className="text-center">Mes projets</h1>
-            <ul className="list-none pl-0 grid md:grid-cols-2 lg:grid-cols-3 gap-3">
+            <ul className="list-none pl-0 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
                 {projects.map((project, index) => (
-                    <ProjectCard key={index} {...project} />
+                    <ProjectCard
+                        key={"project" + index}
+                        modalId={"project" + index}
+                        {...project}
+                    />
                 ))}
             </ul>
         </div>
