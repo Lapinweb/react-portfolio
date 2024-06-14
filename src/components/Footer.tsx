@@ -1,7 +1,7 @@
 export default function Footer() {
     return (
-        <footer className="footer sm:px-3 sm:justify-end sticky sm:bottom-3">
-            <nav className="p-5 w-full sm:w-fit bg-primary text-primary-content sm:rounded-box shadow-lg">
+        <footer className="footer">
+            <nav className="p-5 w-full bg-primary text-primary-content shadow-lg">
                 <p className="footer-title">Liens</p>
                 <a
                     className="link link-hover"

@@ -1,66 +1,7 @@
 import React from "react";
+import Image from "next/image";
 import ProjectCard from "@/components/ProjectCard";
-
-interface Project {
-    title: string;
-    description: string;
-    githubLink: string;
-    webLink: string;
-    stack: Array<string>;
-}
-
-const projects: Project[] = [
-    {
-        title: "Test",
-        description: "blablabla",
-        githubLink: "fauxliengithub",
-        webLink: "fauxlienweb",
-        stack: ["HTML", "CSS", "Javascript"],
-    },
-    {
-        title: "Site mobile de réservation d'un restaurant",
-        description: "Ceci n'est pas une description",
-        githubLink: "https://github.com/Lapinweb/CelineSou_3_05032021",
-        webLink: "https://lapinweb.github.io/CelineSou_3_05032021/",
-        stack: ["HTML", "CSS", "Sass"],
-    },
-    {
-        title: "Frontend d’un site e-commerce",
-        description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed varius tristique urna, id porttitor erat tristique at. Praesent diam tortor, posuere eget finibus ac, feugiat vitae quam. Quisque at semper lacus, vel tristique nibh. Vestibulum a sem lectus. Quisque faucibus ipsum id nisl convallis finibus. Morbi odio arcu, mattis quis pharetra sed, tempor in sem. Phasellus cursus nibh sit amet nisi mattis egestas. Mauris rhoncus nisi ac dictum laoreet. Mauris tristique sem in diam mollis efficitur. In sit amet leo egestas, luctus neque non, consequat diam. Nullam eros lorem, tempus eu efficitur scelerisque, vehicula ornare libero. Nunc ut rutrum leo, a egestas ante. Fusce faucibus pharetra dolor sit amet vestibulum. Pellentesque id odio leo. Pellentesque pulvinar lectus vitae blandit porttitor.",
-        githubLink: "https://github.com/Lapinweb/CelineSou_5_11062021",
-        webLink: "",
-        stack: ["HTML", "CSS", "Javascript", "Bootstrap"],
-    },
-    {
-        title: "Test",
-        description: "blablabla",
-        githubLink: "fauxliengithub",
-        webLink: "fauxlienweb",
-        stack: ["HTML", "CSS", "Javascript"],
-    },
-    {
-        title: "Test",
-        description: "blablabla\nCeci est un paragraphe",
-        githubLink: "fauxliengithub",
-        webLink: "fauxlienweb",
-        stack: ["HTML", "CSS", "Javascript"],
-    },
-    {
-        title: "Test",
-        description: "blablabla",
-        githubLink: "fauxliengithub",
-        webLink: "fauxlienweb",
-        stack: ["HTML", "CSS", "Javascript"],
-    },
-    {
-        title: "Test",
-        description: "blablabla",
-        githubLink: "fauxliengithub",
-        webLink: "fauxlienweb",
-        stack: ["HTML", "CSS", "Javascript"],
-    },
-];
+import { projects } from "@/assets/projectsData";
 
 export default function Projects() {
     return (
@@ -70,8 +11,8 @@ export default function Projects() {
                 {projects.map((project, index) => (
                     <ProjectCard
                         key={"project" + index}
-                        modalId={"project" + index}
                         {...project}
+                        modalId={"project" + index}
                     />
                 ))}
             </ul>

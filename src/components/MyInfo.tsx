@@ -17,7 +17,7 @@ export default function MyInfo() {
                     Rigoureuse et curieuse, j'ai une réelle envie d'apprendre et
                     d'approfondir mes connaissances. Je suis passionnée par les
                     métiers du numérique, c'est pourquoi je cherche à me
-                    spécialiser en tant que full stack développeur web.
+                    spécialiser en tant que développeuse web Full Stack.
                     <br />
                     <br />
                     Actuellement en formation à Ada Tech School, je suis à la
