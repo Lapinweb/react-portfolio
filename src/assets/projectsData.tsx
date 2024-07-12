@@ -11,7 +11,7 @@ export const projects: Project[] = [
 	{
 		title: "Page d'accueil d'un site de réservations",
 		description:
-			"Projet solo de ma formation, à partir d'une maquette.\n\nIntégrer une page de site responsive en HTML et CSS.",
+			"Projet solo durant ma formation chez OpenClassrooms, à partir d'une maquette.\n\nIntégrer une page de site responsive en HTML et CSS.",
 		githubLink: "https://github.com/Lapinweb/CelineSou_2_08022021",
 		webLink: "https://lapinweb.github.io/CelineSou_2_08022021/",
 		stack: ["HTML", "CSS"],
@@ -106,28 +106,73 @@ export const projects: Project[] = [
 		],
 	},
 	{
-		title: "Test",
-		description: "blablabla",
-		githubLink: "fauxliengithub",
-		webLink: "fauxlienweb",
-		stack: ["HTML", "CSS", "Javascript"],
-		images: [],
-	},
-	{
-		title: "Test",
+		title: "Jeu sur Pico-8: Heal'em'up",
 		description:
-			"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam euismod risus vitae turpis vestibulum sagittis. Curabitur nulla neque, interdum nec metus ac, accumsan faucibus mauris. Nullam euismod enim ut dolor pellentesque congue. Praesent tempor purus nec dolor suscipit, eu sollicitudin elit facilisis. Etiam libero orci, malesuada quis sapien non, imperdiet interdum mauris. Vivamus id feugiat mi. Donec pellentesque mauris sed urna cursus maximus. Quisque tincidunt porta nisl, quis tempor arcu tempor sit amet. Proin sagittis, diam in cursus placerat, metus felis lobortis lectus, eu accumsan justo sem nec velit. Donec in sem hendrerit, placerat mi ut, viverra ex. Sed a dolor id nisl lobortis molestie laoreet in eros.\nSed lectus augue, elementum nec tempor nec, volutpat a odio. In eget tristique dolor, et pharetra felis. Curabitur finibus diam gravida, tempus sem id, luctus arcu. Suspendisse pretium turpis nec augue viverra, a varius elit commodo. Donec et faucibus ligula, sit amet dignissim risus. Nullam auctor fermentum tincidunt. Phasellus ac vestibulum felis, a blandit libero. Praesent dapibus aliquet elit sit amet tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;\nante dapibus convallis. Donec in accumsan enim. Donec ut ante dignissim, sodales ex vel, hendrerit nisi. Donec a mauris quis diam hendrerit dignissim. Nunc facilisis nisl ac lacus rutrum posuere. Duis eget convallis arcu. Proin non velit consequat, dignissim augue id, auctor lorem. Maecenas ut velit vel lorem tincidunt aliquet a nec ipsum. Ut varius nunc vitae mauris gravida faucibus. Mauris hendrerit massa massa, a iaculis felis efficitur sed. Phasellus congue lectus sit amet elit congue, eu congue ante bibendum.\nDonec feugiat risus justo, id consectetur sem congue ac. Cras eleifend venenatis dui sed porttitor. Phasellus consectetur bibendum urna vel egestas. Donec eu neque nisi. In auctor nunc a elit eleifend bibendum. Ut leo mauris, ultrices et tincidunt et, semper fringilla sapien. Phasellus porta massa justo, sed tincidunt est vulputate non. Nulla eget efficitur leo, a volutpat urna. Donec viverra magna ut interdum tincidunt. Morbi eget mi imperdiet, facilisis ante at, efficitur purus. Vivamus felis dolor, consequat a lectus malesuada, pretium hendrerit felis. Maecenas ornare elementum condimentum. Nullam eget ex ultricies, ornare quam sit amet, interdum sapien. Sed pretium vestibulum sapien. Suspendisse quam ligula, gravida ut ipsum eget, fermentum ultrices ante.\nDuis sit amet nulla tincidunt, molestie ligula non, sodales massa. Cras vestibulum lacus odio, vitae ornare lectus dapibus in. Donec eros libero, cursus vitae mollis id, egestas in leo. Aenean a condimentum nisi. Sed nunc sem, posuere congue sagittis eu, tempor in ligula. Integer vitae nisl dolor. Pellentesque turpis neque, blandit quis dui non, faucibus cursus mi. Nullam faucibus, ipsum dignissim consequat feugiat, orci risus commodo magna, nec pulvinar tortor tortor eu metus. Cras mattis vehicula augue, a ornare ex porttitor eget. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas in elementum elit. Integer quis molestie ante.",
-		githubLink: "fauxliengithub",
-		webLink: "fauxlienweb",
+			"Projet collectif durant ma formation chez Ada Tech School.\n\nL'objectif était de créer un jeu sur Pico-8 en 2 semaines. Nous avons créé un jeu de tir ou au lieu d'attaquer des personnes, nous les soignons.",
+		githubLink: "https://github.com/Lapinweb/healthemup",
+		webLink: "https://lapinweb.github.io/healthemup/",
+		stack: ["Pico-8", "Lua"],
+		images: [
+			{
+				url: "/projects/healemup-1.png",
+				alt: "Menu de démarrage du jeu",
+			},
+		],
+	},
+	{
+		title: "Data visualisation",
+		description:
+			"Projet collectif durant ma formation chez OpenClassrooms.\n\nL'objectif était de développer une application web qui permette de visualiser des données de façon dynamique en 2 semaines. Mon équipe a choisi d'utiliser l'API publique de Rick et Morty (https://rickandmortyapi.com/). \n\nLe projet est déployé sur GitHub Pages.",
+		githubLink: "https://github.com/Lapinweb/projet-collectif-dataviz",
+		webLink: "https://lapinweb.github.io/projet-collectif-dataviz/",
+		stack: ["HTML", "CSS", "Javascript"],
+		images: [
+			{
+				url: "/projects/rickandmorty-1.png",
+				alt: "Page liste de personnages",
+			},
+			{
+				url: "/projects/rickandmorty-2.png",
+				alt: "Page d'accueil avec boutons page aléatoire",
+			},
+			{
+				url: "/projects/rickandmorty-3.png",
+				alt: "Page d'un personnage",
+			},
+			{
+				url: "/projects/rickandmorty-4.png",
+				alt: "Page liste d'épisodes",
+			},
+		],
+	},
+	{
+		title: "Extension de navigateur",
+		description:
+			"Projet collectif durant ma formation chez Ada Tech School.\n\nL'objectif était de créer une extension de navigateur pour Chrome en 2 semaines. Nous avons choisi de faire une extension de traduction, en ouvrant une fenêtre avec des champs à remplir ou en surlignant du texte sur un site directement.",
+		githubLink:
+			"https://github.com/Lapinweb/projet-collectif-extension-de-navigateur-celine-eric-marie",
+		webLink: "",
 		stack: ["HTML", "CSS", "Javascript"],
 		images: [],
 	},
 	{
-		title: "Test",
-		description: "blablabla",
-		githubLink: "fauxliengithub",
-		webLink: "fauxlienweb",
-		stack: ["HTML", "CSS", "Javascript"],
+		title: "Réseau social PHP",
+		description:
+			"Projet collectif durant ma formation chez Ada Tech School.\n\nNous avons récupérer un code existant en PHP et nous devions le continuer de le développer.",
+		githubLink:
+			"https://github.com/Lapinweb/projet-collectif-reseau-social-php-reseau-social_marine-marjolene-celine",
+		webLink: "",
+		stack: ["HTML", "CSS", "PHP"],
+		images: [],
+	},
+	{
+		title: "Site de vente de meuble",
+		description:
+			"Projet collectif durant ma formation chez Ada Tech School.\n\nRéparties en deux équipes, nous devions mettre en place le front-end et back-end d'une application .",
+		githubLink:
+			"https://github.com/Lapinweb/projet-collectif-reseau-social-php-reseau-social_marine-marjolene-celine",
+		webLink: "",
+		stack: ["HTML", "CSS", "PHP"],
 		images: [],
 	},
 ];
