@@ -19,12 +19,19 @@ export default function ProjectCard(props: OneProject) {
 
                     <div className="divider my-0"></div>
 
-                    {images.length === 0 ? (
-                        <div className="h-64 bg-secondary"></div>
-                    ) : (
-                        <img src={images[0].url} alt="" />
-                    )}
-
+                    <div className="h-64 flex justify-center items-center">
+                        {images.length === 0 ? (
+                            <div className="text-wrap text-center">
+                                <p>{stack.join(" | ")}</p>
+                            </div>
+                        ) : (
+                            <img
+                                className="max-h-full m-0 object-contain"
+                                src={images[0].url}
+                                alt=""
+                            />
+                        )}
+                    </div>
                     <div className="self-end m-3">
                         <button
                             onClick={() => handleShowModal(modalId)}
@@ -58,7 +65,7 @@ function ProjectModal({
     let splitDescription = description.split("\n");
     return (
         <dialog id={modalId} className="modal modal-bottom sm:modal-middle">
-            <div className="modal-box sm:w-11/12">
+            <div className="modal-box sm:w-10/12 sm:max-w-5xl">
                 <form method="dialog">
                     <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
                         ✕
@@ -87,24 +94,31 @@ function ProjectModal({
                         </a>
                     ) : null}
                 </div>
-                {images.length != 0
-                    ? images.map((img, i) => {
-                          return (
-                              <div className="my-4 flex flex-col justify-between items-center">
-                                  {i != 0 ? (
-                                      <div className="divider"></div>
-                                  ) : null}
-                                  <h4>{img.alt}</h4>
-                                  <img
-                                      className="mt-0 border border-solid border-secondary"
-                                      key={`projectImg-${i}`}
-                                      src={img.url}
-                                      alt={img.alt}
-                                  />
-                              </div>
-                          );
-                      })
-                    : null}
+                {images.length != 0 ? (
+                    <div className="flex flex-col justify-between">
+                        {images.map((img, i) => {
+                            return (
+                                <div key={`projectImg-${i}`} className="my-4 flex flex-col">
+                                    {i != 0 ? (
+                                        <div className="divider"></div>
+                                    ) : null}
+                                    <h4>{img.alt}</h4>
+                                    <a
+                                        href={img.url}
+                                        target="_blank"
+                                        className="block h-80 self-center"
+                                    >
+                                        <img
+                                            className="mt-0 h-full object-contain"
+                                            src={img.url}
+                                            alt={img.alt}
+                                        />
+                                    </a>
+                                </div>
+                            );
+                        })}
+                    </div>
+                ) : null}
             </div>
             <form method="dialog" className="modal-backdrop">
                 <button>close</button>

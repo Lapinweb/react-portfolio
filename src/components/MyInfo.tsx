@@ -2,7 +2,9 @@ export default function MyInfo() {
     return (
         <div className="md:w-3/4 mx-3 my-10 mockup-browser border border-base-content bg-secondary">
             <div className="mockup-browser-toolbar text-secondary-content">
-                <div className="sm:input sm:border sm:border-base-content w-full sm:text-base-content text-right sm:text-left">Qui suis-je ?</div>
+                <div className="sm:input sm:border sm:border-base-content w-full sm:text-base-content text-right sm:text-left">
+                    Qui suis-je ?
+                </div>
             </div>
             <div className="p-4 border-t border-base-content bg-base-100">
                 <h2 className="mt-2">Mon parcours</h2>

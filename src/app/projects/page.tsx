@@ -7,7 +7,7 @@ export default function Projects() {
     return (
         <div className="mx-3">
             <h1 className="text-center">Mes projets</h1>
-            <ul className="list-none pl-0 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+            <ul className="list-none pl-0 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
                 {projects.map((project, index) => (
                     <ProjectCard
                         key={"project" + index}
