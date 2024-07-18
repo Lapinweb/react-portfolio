@@ -120,7 +120,7 @@ export const projects: Project[] = [
 		],
 	},
 	{
-		title: "Data visualisation",
+		title: "Site sur Rick and Morty",
 		description:
 			"Projet collectif durant ma formation chez OpenClassrooms.\n\nL'objectif était de développer une application web qui permette de visualiser des données de façon dynamique en 2 semaines. Mon équipe a choisi d'utiliser l'API publique de Rick et Morty (https://rickandmortyapi.com/). \n\nLe projet est déployé sur GitHub Pages.",
 		githubLink: "https://github.com/Lapinweb/projet-collectif-dataviz",
@@ -168,11 +168,11 @@ export const projects: Project[] = [
 	{
 		title: "Site de vente de meuble",
 		description:
-			"Projet collectif durant ma formation chez Ada Tech School.\n\nRéparties en deux équipes, nous devions mettre en place le front-end et back-end d'une application .",
+			"Projet collectif durant ma formation chez Ada Tech School.\n\nRéparties en deux équipes, nous devions mettre en place le front-end et back-end d'une application.\n\nLe site n'est pas déployé.",
 		githubLink:
 			"https://github.com/Lapinweb/projet-collectif-reseau-social-php-reseau-social_marine-marjolene-celine",
 		webLink: "",
-		stack: ["HTML", "CSS", "PHP"],
+		stack: ["ReactJS/TailwindCSS", "Python/Django"],
 		images: [],
 	},
 ];

@@ -1,9 +1,10 @@
 import React from "react";
-import Image from "next/image";
 import ProjectCard from "@/components/ProjectCard";
-import { projects } from "@/assets/projectsData";
+import projectsData from "@/assets/projects.json";
 
 export default function Projects() {
+    const projects = [...projectsData];
+
     return (
         <div className="mx-3">
             <h1 className="text-center">Mes projets</h1>

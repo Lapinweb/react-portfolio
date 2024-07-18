@@ -8,8 +8,11 @@ import Footer from "@/components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-    title: "Céline Sou",
-    description: "Portfolio de Céline Sou",
+	icons: {
+		icon: "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👩‍💻</text></svg>",
+	},
+	title: "Céline Sou",
+	description: "Portfolio de Céline Sou",
 };
 
 export default function RootLayout({
