@@ -16,6 +16,7 @@ export default function ContactLink({
 			<a
 				href={navUrl}
 				className="btn btn-secondary max-w-full"
+				target="_blank"
 			>
 				<span className="w-full text-nowrap overflow-hidden whitespace-nowrap text-ellipsis">{shorterUrl}</span>
 			</a>
