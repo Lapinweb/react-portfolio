@@ -193,7 +193,7 @@
    {
       "title": "Site de vente de meuble",
       "description": "Projet collectif durant ma formation chez Ada Tech School.\n\nRéparties en deux équipes, nous devions mettre en place le front-end et back-end d'une application.\n\nLe site n'est pas déployé.",
-      "githubLink": "https://github.com/Lapinweb/projet-collectif-reseau-social-php-reseau-social_marine-marjolene-celine",
+      "githubLink": "https://github.com/Lapinweb/react-portfolio",
       "webLink": "",
       "stack": [
          "ReactJS/TailwindCSS",
